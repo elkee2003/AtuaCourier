@@ -5,21 +5,22 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   StatusBar,
   Text,
   View,
+  FlatList,
 } from 'react-native';
 
-import HomeScreen from './src/screens/HomeScreen';
+import HomeNavigator from './src/Navigation/Home';
 
 function App() {
 
   return (
     <>
       <StatusBar/>
-      <HomeScreen/>
+      <HomeNavigator/>
     </>      
   );
 }
