@@ -8,9 +8,6 @@
 import React, {useEffect} from 'react';
 import {
   StatusBar,
-  Text,
-  View,
-  FlatList,
 } from 'react-native';
 
 import HomeNavigator from './src/Navigation/Home';

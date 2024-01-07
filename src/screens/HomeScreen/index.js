@@ -11,8 +11,6 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import BottomContainer from '../../components/BottomContainer';
 import { orders } from '../../assets/data/orders';
 
-const origin = {latitude: 28.450927, longitude: -16.260845};
-const destination = {latitude: 37.771707, longitude: -122.4053769};
 const GOOGLE_MAPS_APIKEY = 'AIzaSyADZ3-4KsXIvtIzbN_pqUEPq14npw6XnHY';
 
 navigator.geolocation = require('@react-native-community/geolocation');
@@ -74,7 +72,7 @@ const HomeScreen = () => {
 
   return (
     <View style={{position:'relative'}}>
-      <MapView
+      {myPosition ? <MapView
         style={{width, height:height - 150}}
         provider={PROVIDER_GOOGLE}
         showsUserLocation
@@ -85,7 +83,7 @@ const HomeScreen = () => {
           latitudeDelta: 0.0222,
           longitudeDelta: 0.0121,
         }}
-       >
+      >
 
         {avaliableOrders.map((order)=>{
             return(
@@ -121,7 +119,10 @@ const HomeScreen = () => {
           )
         })}
 
-      </MapView>
+      </MapView> 
+      : 
+      <Text>Loading...</Text>
+      }
 
       {/* Four buttons at the 4 corners */}
       <Pressable onPress={()=>console.warn('Menu')} style={[styles.roundButton, {top:10, left:10}]}>
