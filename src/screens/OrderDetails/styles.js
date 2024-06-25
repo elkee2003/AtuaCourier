@@ -1,0 +1,104 @@
+import { StyleSheet } from "react-native"
+
+const styles = StyleSheet.create({
+    container:{
+        position:'absolute',
+        width:'100%',
+        height:'100%',
+        flex:1,
+        justifyContent: "center",
+        backgroundColor:'#000000e6',
+    },
+    titleContainer:{
+        justifyContent:'center',
+        alignItems:'center',
+        left:12,
+        top:15,
+    },
+    title:{
+        fontSize:35,
+        fontWeight:'bold',
+        marginBottom:40,
+        letterSpacing:1,
+        color: '#34f5e8'
+    },
+    dContainer:{
+        top:25,
+    },
+    details:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between',
+        padding:10,
+    },
+    icon:{
+        backgroundColor:'#d8d2d2',
+        borderRadius:25,
+        borderWidth:2,
+        borderColor:'#6bff08',
+        justifyContent:'center',
+        alignItems:'center',
+        width:50,
+        height:50,
+    },
+    rIcon:{
+        backgroundColor:'#00ffc8',
+        borderRadius:25,
+        borderWidth:2,
+        borderColor:'#2c1f1f',
+        justifyContent:'center',
+        alignItems:'center',
+        width:50,
+        height:50,
+    },
+    bckBtn:{
+        position:'absolute',
+        top:20,
+        left:10,
+        backgroundColor:'#f11b2d',
+        borderRadius:25,
+        justifyContent:'center',
+        alignItems:'center',
+        width:42,
+        height:42,
+    },
+    tDetails:{
+        fontSize:24,
+        fontWeight:'bold',
+        marginLeft:'auto',
+        color:'white',
+    },
+    detailsOfOrder:{
+        marginLeft:100,
+    },
+    recipientDetails:{
+        marginBottom:90,
+    },
+    recipientHeader:{
+        fontSize:30,
+        fontWeight:600,
+        marginTop:20,
+        marginBottom:10,
+        marginRight:'auto',
+        marginLeft:15,
+        color:'#34f104',
+    },
+    acceptBtn:{
+        marginTop: 'auto',
+        marginBottom:50,
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:'#6bff08',
+        borderRadius:30,
+        padding:5,
+    },
+
+    tBtn:{
+        fontSize:30,
+        fontWeight:'bold',
+        textAlign:'center',
+        color:'black'
+    }
+})
+
+export default styles;

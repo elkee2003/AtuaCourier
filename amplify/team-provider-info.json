@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-atua-staging-72308-authRole",
+      "UnauthRoleArn": "arn:aws:iam::115372163617:role/amplify-atua-staging-72308-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::115372163617:role/amplify-atua-staging-72308-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-atua-staging-72308-deployment",
+      "UnauthRoleName": "amplify-atua-staging-72308-unauthRole",
+      "StackName": "amplify-atua-staging-72308",
+      "StackId": "arn:aws:cloudformation:us-east-1:115372163617:stack/amplify-atua-staging-72308/8c92a900-5786-11ee-a23b-126b749e6587",
+      "AmplifyAppId": "dnxdny8iom5jq"
+    },
+    "categories": {
+      "auth": {
+        "Atua": {}
+      }
+    }
+  }
+}

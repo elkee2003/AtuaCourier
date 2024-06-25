@@ -1,0 +1,30 @@
+enum OrderStatus {
+  READY_FOR_PICKUP
+  ACCEPTED
+  PICKEDUP
+  DELIVERED
+}
+
+type Order @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  recipientName: String!
+  recipientNumber: String!
+  orderDetails: String
+  total: Float
+  status: OrderStatus!
+  userID: ID! @index(name: "byUser")
+  originPlace: String
+  destinationPlace: String
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  sub: String!
+  name: String!
+  phoneNumber: String!
+  lng: Float!
+  Orders: [Order] @hasMany(indexName: "byUser", fields: ["id"])
+  lat: Float!
+  address: String!
+}
+ 
